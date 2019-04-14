@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this,content, Toast.LENGTH_SHORT).show();
 
-             //  textView.setText(content);
+                textView.setText(content);
             }
         });
     }
