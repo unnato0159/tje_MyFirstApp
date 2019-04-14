@@ -28,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               String  content = "ID:"+userId.getText().toString()+"PW:"+password.getText().toString();
+               String  id = userId.getText().toString();
+               String pw = password.getText().toString();
+                Toast.makeText(MainActivity.this,id, Toast.LENGTH_SHORT).show();
 
-                Toast.makeText(MainActivity.this,content, Toast.LENGTH_SHORT).show();
+                textView.setText(String.format("id : %s , pw : %s",id,pw));
 
-                textView.setText(content);
             }
         });
     }
